@@ -8,7 +8,6 @@ public class Produto {
 //    Construtor Padrão - Sobrecarga
     public Produto(){
     }
-
 //    Construtor 2 - Sobrecarga
     public Produto(String name, double price, int quantity) {
         this.name = name;
@@ -47,13 +46,11 @@ public class Produto {
     }
 
     public void addProduto(int quantidade){
-        this.quantity += quantidade;
-        // this.quantity = this.quantity + quantidade;
+        this.quantity += quantidade; // this.quantity = this.quantity + quantidade;
     }
 
     public void rmProduto(int quantidade) {
-        this.quantity -= quantidade;
-        // this.quantity = this.quantity - quantidade;
+        this.quantity -= quantidade; // this.quantity = this.quantity - quantidade;
     }
 
     @Override

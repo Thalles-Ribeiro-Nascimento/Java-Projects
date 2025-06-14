@@ -20,3 +20,34 @@ Instanciando um produto com atributos vazios:
 Podemos usar o construtor para que a inicialização desses valores seja obrigatória
     Product p = new Product(name, price, quantity);
 Assim, o Produto inicializará com valores em seus atributos
+
+
+This:
+É uma referência para o próprio objeto;
+
+Usos comuns:
+    • Diferenciar atributos de variáveis locais;
+    • Passar o próprio objeto como argumento na chamada de um método ou
+      construtor;
+
+Sobrecarga:
+    • É um recurso que uma classe possui de oferecer mais de uma
+      operação com o mesmo nome, porém com diferentes listas de
+      parâmetros.
+Também é possível incluir um construtor padrão
+
+Encapsulamento:
+    • É um princípio que consiste em
+      esconder detalhes de implementação
+      de uma classe, expondo apenas
+      operações seguras e que mantenham
+      os objetos em um estado consistente.
+
+    • Regra de ouro: o objeto deve sempre
+      estar em um estado consistente, e a
+      própria classe deve garantir isso.
+
+    • Um objeto NÃO deve expor nenhum atributo (modificador de acesso
+      private);
+    • Os atributos devem ser acessados por meio de métodos get e set
+      Padrão JavaBeans: https://en.wikipedia.org/wiki/JavaBeans
