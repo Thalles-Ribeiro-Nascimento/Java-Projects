@@ -24,10 +24,10 @@ public class ContaCorrente {
     private double saldo;
 
     //   Sobrecarga
-    public ContaCorrente(int CONTA, String nome_titular, double saldo) {
+    public ContaCorrente(int CONTA, String nome_titular, double depositoInicial) {
         this.CONTA = CONTA;
         this.nome_titular = nome_titular;
-        this.saldo = saldo;
+        depositar(depositoInicial);
     }
     //    Sobrecarga
     public ContaCorrente(int CONTA, String nome_titular) {
