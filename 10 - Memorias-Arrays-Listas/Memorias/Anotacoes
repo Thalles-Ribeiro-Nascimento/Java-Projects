@@ -1,0 +1,7 @@
+Garbage Collector:
+    Desaloca objetos sem referência - Heap
+
+Desalocação imediata:
+    Varáveis locais a qual o seu escopo já foi executado e finalizado - Stack
+
+Há na Stack um empilhamento de Escopo em que existem variáveis alocadas e conforme for sendo executado os escopos, são desalocadas imediatamente
