@@ -29,7 +29,6 @@ public class Matrizes {
             for (int coluna = 0; coluna < matriz[linha].length; coluna++) {
                 if (matriz[linha][coluna] == x){
                     System.out.printf("Position: %d,%d%n", linha, coluna);
-
                     try {
                         System.out.printf("Up: %d%n", matriz[linha - 1][coluna]);
                     }catch (ArrayIndexOutOfBoundsException ignored){

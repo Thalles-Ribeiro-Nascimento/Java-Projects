@@ -1,7 +1,6 @@
 package exercises.application;
 
 import exercises.entities.Funcionario;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
