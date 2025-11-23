@@ -2,17 +2,17 @@ package Exercises.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 public class Contract {
     private int numberContract;
-    private Date dateContract;
+    private LocalDate dateContract;
     private double valueContract;
 
     private List<Installment> installmentsList = new ArrayList<>();
 
-    public Contract(int numberContract, Date dateContract, double valueContract) {
+    public Contract(int numberContract, LocalDate dateContract, double valueContract) {
         this.numberContract = numberContract;
         this.dateContract = dateContract;
         this.valueContract = valueContract;
@@ -22,7 +22,7 @@ public class Contract {
         return numberContract;
     }
 
-    public Date getDateContract() {
+    public LocalDate getDateContract() {
         return dateContract;
     }
 

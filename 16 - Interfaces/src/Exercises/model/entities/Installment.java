@@ -1,23 +1,24 @@
 package Exercises.model.entities;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Installment {
-    private Date dueDate;
+    private LocalDate dueDate;
     private Double amount;
-    private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd//MM/yyyy");
 
-    public Installment(Date dueDate, Double amount) {
+    public Installment(LocalDate dueDate, Double amount) {
         this.dueDate = dueDate;
         this.amount = amount;
     }
 
-    public Date getDueDate() {
+    public LocalDate getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
+    public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
 
@@ -31,7 +32,6 @@ public class Installment {
 
     @Override
     public String toString() {
-        String dataFormatada = sdf.format(getDueDate());
-        return String.format("%s - $ %.2f%n", dataFormatada, getAmount());
+        return String.format("%s - $ %.2f%n", getDueDate().format(dateTimeFormatter), getAmount());
     }
 }
